@@ -17,9 +17,14 @@ class MainPageVC: UIViewController {
         
         mainView = MainPageView(frame: CGRect.zero)
         self.view.addSubview(mainView)
+        mainView.imageViewButton.addTarget(self, action: #selector(presentImageVC), for: .touchUpInside)
         
         mainView.autoPinEdgesToSuperviewEdges()
     }
-
+    
+    @objc func presentImageVC (){
+        let imageVC = ImageViewController()
+        self.navigationController?.pushViewController(imageVC, animated: true)
+    }
 }
 

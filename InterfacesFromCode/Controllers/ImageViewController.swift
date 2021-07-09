@@ -8,22 +8,18 @@
 import UIKit
 
 class ImageViewController: UIViewController {
-
+    var imageView: ImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        imageView = ImageView()
+        ImageManager.shared.getImageFromURL(url: "https://pbs.twimg.com/media/E4YjvCcXwAEgvsN?format=jpg&name=large") { recievedImage in
+            self.imageView.image.image = recievedImage
+        }
+        self.view.addSubview(imageView)
+        
+        imageView.autoPinEdgesToSuperviewEdges()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

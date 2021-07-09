@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B3072E6C87C82BC28DB2BF80 /* Pods_InterfacesFromCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5A9DD20FBD002FED45A788 /* Pods_InterfacesFromCode.framework */; };
 		B38175A426985B9E001B6EE3 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38175A326985B9E001B6EE3 /* UIButtonExtensions.swift */; };
+		B38175A6269876D1001B6EE3 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38175A5269876D1001B6EE3 /* ImageView.swift */; };
+		B38175A8269879B8001B6EE3 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38175A7269879B8001B6EE3 /* ImageManager.swift */; };
 		B3B82B582695B4DC00CAEE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B82B572695B4DC00CAEE20 /* AppDelegate.swift */; };
 		B3B82B5A2695B4DC00CAEE20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B82B592695B4DC00CAEE20 /* SceneDelegate.swift */; };
 		B3B82B5C2695B4DC00CAEE20 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B82B5B2695B4DC00CAEE20 /* MainPageVC.swift */; };
@@ -24,6 +26,8 @@
 		6E15DBABA12BF914D817185D /* Pods-InterfacesFromCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterfacesFromCode.debug.xcconfig"; path = "Target Support Files/Pods-InterfacesFromCode/Pods-InterfacesFromCode.debug.xcconfig"; sourceTree = "<group>"; };
 		7A5A9DD20FBD002FED45A788 /* Pods_InterfacesFromCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterfacesFromCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38175A326985B9E001B6EE3 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		B38175A5269876D1001B6EE3 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		B38175A7269879B8001B6EE3 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		B3B82B542695B4DC00CAEE20 /* InterfacesFromCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfacesFromCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B82B572695B4DC00CAEE20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3B82B592695B4DC00CAEE20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				B3B82B722695CB5500CAEE20 /* MainPageView.swift */,
+				B38175A5269876D1001B6EE3 /* ImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		B3B82B6D2695BD4600CAEE20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B38175A7269879B8001B6EE3 /* ImageManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,8 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38175A6269876D1001B6EE3 /* ImageView.swift in Sources */,
 				B3B82B5C2695B4DC00CAEE20 /* MainPageVC.swift in Sources */,
 				B3B82B582695B4DC00CAEE20 /* AppDelegate.swift in Sources */,
+				B38175A8269879B8001B6EE3 /* ImageManager.swift in Sources */,
 				B3B82B732695CB5500CAEE20 /* MainPageView.swift in Sources */,
 				B3B82B712695C3F000CAEE20 /* ImageViewController.swift in Sources */,
 				B3B82B5A2695B4DC00CAEE20 /* SceneDelegate.swift in Sources */,
